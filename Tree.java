@@ -251,7 +251,7 @@ public class Tree<T extends Comparable<T>> {
         }
     }
 
-    // Traverses the tree in ascending order and prints each name.
+    // Traverses the tree in ascending order and prints each node's data.
     public void ascending(Node<T> node) {
 
         if (node.getLeft() != null) {
