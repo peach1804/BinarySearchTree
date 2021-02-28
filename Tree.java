@@ -33,13 +33,15 @@ public class Tree<T extends Comparable<T>> {
 
         if (data.compareTo(node.getData()) < 0) {
 
-            node.setLeft(insert(node.getLeft(), data));
+            n = insert(node.getLeft(), data);
+            node.setLeft(n);
             updateHeight(node);
             node = balanceNode(node);
 
         } else if (data.compareTo(node.getData()) > 0) {
 
-            node.setRight(insert(node.getRight(), data));
+            n = insert(node.getRight(), data)
+            node.setRight(n);
             updateHeight(node);
             node = balanceNode(node);
 
