@@ -21,7 +21,7 @@ public class Main {
 
         System.out.println();
 
-        System.out.println("Enter a part to search:");
+        System.out.println("Enter a number to search:");
         int input = sc.nextInt();
         Node<Integer> result = bst.search(input);
 
